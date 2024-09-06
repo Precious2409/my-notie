@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "306220037625",
+    "project_id": "my-notie",
+    "storage_bucket": "my-notie.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:306220037625:android:c2d6ca68cd39190244b928",
+        "android_client_info": {
+          "package_name": "com.example.learningdart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAveJjmowdGPz0ZNBsObeKh8YsRg6SZkws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
