@@ -1,6 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'dart:developer' as devtools show log;
+
 
 enum MenuAction { logout }
 
@@ -53,7 +53,7 @@ Future<bool> showLogOutDialog(BuildContext context){
       builder: (context){
         return AlertDialog(
           title: const Text('Log out'),
-          content: const Text('Are you sure you want to sign out ?') ,
+          content: const Text('Are you sure you want to log out?') ,
           actions: [
             TextButton(
                 onPressed: (){
@@ -73,4 +73,4 @@ Future<bool> showLogOutDialog(BuildContext context){
   ).then((value) => value ?? false);
 }
 
-// I stopped at 12:50:19  
+
