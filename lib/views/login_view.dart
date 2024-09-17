@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:learningdart/constants/routes.dart';
 import '../utilities/show_error_dialog.dart';
 
 
@@ -63,7 +64,7 @@ class _LoginViewState extends State<LoginView> {
                     password: password
                 );
                 Navigator.of(context)
-                    .pushNamedAndRemoveUntil('/notes/', (route) => false);
+                    .pushNamedAndRemoveUntil(notesRoute, (route) => false);
               } on FirebaseAuthException catch(e) {
                 if (e.code == 'user-not-found'){
                   await showErrorDialog(context, 'User not found');
@@ -84,7 +85,7 @@ class _LoginViewState extends State<LoginView> {
           TextButton(
               onPressed: (){
                 Navigator.of(context).pushNamedAndRemoveUntil(
-                    '/register/', 
+                    registerRoute,
                         (route) => false
                 );
               },
