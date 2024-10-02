@@ -39,4 +39,3 @@ class _VerifyEmailViewState extends State<VerifyEmailView> {
   }
 }
 
-//I stopped at 14:35:40
